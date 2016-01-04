@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A5A5EFA51C3A0CDB00ED9F46 /* FindTrueLove-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FindTrueLove-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A5EFA51C3A0CDB00ED9F46 /* FindTrueLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindTrueLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A5EFA81C3A0CDB00ED9F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A5EFAA1C3A0CDB00ED9F46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5A5EFAD1C3A0CDB00ED9F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		A5A5EF9C1C3A0CDB00ED9F46 = {
 			isa = PBXGroup;
 			children = (
-				A5A5EFA71C3A0CDB00ED9F46 /* FindTrueLove-Practice */,
+				A5A5EFA71C3A0CDB00ED9F46 /* FindTrueLove */,
 				A5A5EFA61C3A0CDB00ED9F46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		A5A5EFA61C3A0CDB00ED9F46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5A5EFA51C3A0CDB00ED9F46 /* FindTrueLove-Practice.app */,
+				A5A5EFA51C3A0CDB00ED9F46 /* FindTrueLove.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5A5EFA71C3A0CDB00ED9F46 /* FindTrueLove-Practice */ = {
+		A5A5EFA71C3A0CDB00ED9F46 /* FindTrueLove */ = {
 			isa = PBXGroup;
 			children = (
 				A5A5EFAC1C3A0CDB00ED9F46 /* Main.storyboard */,
@@ -61,6 +61,7 @@
 				A5A5EFBB1C3A0EDB00ED9F46 /* ContactsHelper.swift */,
 				A5A5EFBA1C3A0CE500ED9F46 /* Supporting Files */,
 			);
+			name = FindTrueLove;
 			path = "FindTrueLove-Practice";
 			sourceTree = "<group>";
 		};
@@ -78,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5A5EFA41C3A0CDB00ED9F46 /* FindTrueLove-Practice */ = {
+		A5A5EFA41C3A0CDB00ED9F46 /* FindTrueLove */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5A5EFB71C3A0CDB00ED9F46 /* Build configuration list for PBXNativeTarget "FindTrueLove-Practice" */;
+			buildConfigurationList = A5A5EFB71C3A0CDB00ED9F46 /* Build configuration list for PBXNativeTarget "FindTrueLove" */;
 			buildPhases = (
 				A5A5EFA11C3A0CDB00ED9F46 /* Sources */,
 				A5A5EFA21C3A0CDB00ED9F46 /* Frameworks */,
@@ -90,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = "FindTrueLove-Practice";
+			name = FindTrueLove;
 			productName = "FindTrueLove-Practice";
-			productReference = A5A5EFA51C3A0CDB00ED9F46 /* FindTrueLove-Practice.app */;
+			productReference = A5A5EFA51C3A0CDB00ED9F46 /* FindTrueLove.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A5A5EFA01C3A0CDB00ED9F46 /* Build configuration list for PBXProject "FindTrueLove-Practice" */;
+			buildConfigurationList = A5A5EFA01C3A0CDB00ED9F46 /* Build configuration list for PBXProject "FindTrueLove" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5A5EFA41C3A0CDB00ED9F46 /* FindTrueLove-Practice */,
+				A5A5EFA41C3A0CDB00ED9F46 /* FindTrueLove */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +265,7 @@
 				INFOPLIST_FILE = "FindTrueLove-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blissChapman.FindTrueLove-Practice";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FindTrueLove;
 			};
 			name = Debug;
 		};
@@ -275,14 +276,14 @@
 				INFOPLIST_FILE = "FindTrueLove-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blissChapman.FindTrueLove-Practice";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FindTrueLove;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5A5EFA01C3A0CDB00ED9F46 /* Build configuration list for PBXProject "FindTrueLove-Practice" */ = {
+		A5A5EFA01C3A0CDB00ED9F46 /* Build configuration list for PBXProject "FindTrueLove" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5A5EFB51C3A0CDB00ED9F46 /* Debug */,
@@ -291,13 +292,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5A5EFB71C3A0CDB00ED9F46 /* Build configuration list for PBXNativeTarget "FindTrueLove-Practice" */ = {
+		A5A5EFB71C3A0CDB00ED9F46 /* Build configuration list for PBXNativeTarget "FindTrueLove" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5A5EFB81C3A0CDB00ED9F46 /* Debug */,
 				A5A5EFB91C3A0CDB00ED9F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
