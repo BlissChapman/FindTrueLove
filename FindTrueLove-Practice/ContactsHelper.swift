@@ -12,10 +12,14 @@ import Contacts
 
 class ContactsHelper {
     
-    static private let contactStore = CNContactStore()
+    private let contactStore: CNContactStore!
+    
+    init() {
+        contactStore = CNContactStore()
+    }
     
     ///Detects the users permission to view their contacts and requests permission if necessary, passing the result of the request to the completionHandler.
-    static func requestAccess(completionHandler: (accessGranted: Bool, accessError: ErrorType? ) -> Void) {
+    func requestAccess(completionHandler: (accessGranted: Bool, accessError: ErrorType? ) -> Void) {
         let authorizationStatus = CNContactStore.authorizationStatusForEntityType(.Contacts)
         
         switch authorizationStatus {
@@ -33,7 +37,7 @@ class ContactsHelper {
     }
     
     ///Finds a random contact with a valid name and contact photo.  If successful, the name and photo will be passed into the completion handler, otherwise the tuple will be nil.
-    static func findRandomValentine(completionHandler: (name: String, contactPhoto: UIImage)? -> Void) {
+    func findRandomValentine(completionHandler: (name: String, contactPhoto: UIImage)? -> Void) {
         
         retrievePotentialValentines { (contacts) -> Void in
             guard let potentialValentines = contacts else {
@@ -60,7 +64,7 @@ class ContactsHelper {
         }
     }
     
-    static private func retrievePotentialValentines(callback: ([CNContact]?)->Void) -> Void {
+    private func retrievePotentialValentines(callback: ([CNContact]?)->Void) -> Void {
         
         //move off the main queue while doing intense tasks like enumerating through a users entire contacts list
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)) { () -> Void in
@@ -80,7 +84,7 @@ class ContactsHelper {
             
             do {
                 //fetch all contacts
-                try contactStore.enumerateContactsWithFetchRequest(fetchRequest, usingBlock: { (contact, stop) -> Void in
+                try self.contactStore.enumerateContactsWithFetchRequest(fetchRequest, usingBlock: { (contact, stop) -> Void in
                     
                     //if the contact could be our valentine, then add it to the array of valid results
                     if contact.isPotentialValentine() {
@@ -106,6 +110,7 @@ class ContactsHelper {
 }
 
 extension CNContact {
+    ///Determines if a contact could be a potential valentine by checking if it has existing image data and a full name.
     func isPotentialValentine() -> Bool {
         return self.imageDataAvailable && CNContactFormatter.stringFromContact(self, style: .FullName) != nil
     }

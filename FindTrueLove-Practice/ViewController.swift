@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var valentinesPortraitImageView: UIImageView!
     @IBOutlet weak var valentinesNameLabel: UILabel!
     
+    private let contactsHelper = ContactsHelper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +27,14 @@ class ViewController: UIViewController {
         if motion == .MotionShake {
             self.promptLabel.text = "Searching..."
             
-            ContactsHelper.requestAccess { (accessGranted, accessError) -> Void in
+            contactsHelper.requestAccess { (accessGranted, accessError) -> Void in
                 guard accessError == nil else {
                     debugPrint(accessError)
                     return
                 }
                 
                 if accessGranted {
-                    ContactsHelper.findRandomValentine({ (valentineInfo) -> Void in
+                    self.contactsHelper.findRandomValentine({ (valentineInfo) -> Void in
                         
                         //explicitly move back to the main queue to make sure that all user interface work is done in the proper place
                         dispatch_async(dispatch_get_main_queue()) { () -> Void in
