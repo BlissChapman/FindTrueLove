@@ -12,6 +12,7 @@
 		A5A5EFAE1C3A0CDB00ED9F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EFAC1C3A0CDB00ED9F46 /* Main.storyboard */; };
 		A5A5EFB01C3A0CDB00ED9F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EFAF1C3A0CDB00ED9F46 /* Assets.xcassets */; };
 		A5A5EFB31C3A0CDB00ED9F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EFB11C3A0CDB00ED9F46 /* LaunchScreen.storyboard */; };
+		A5A5EFBC1C3A0EDB00ED9F46 /* ContactsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5EFBB1C3A0EDB00ED9F46 /* ContactsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A5A5EFAF1C3A0CDB00ED9F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5A5EFB21C3A0CDB00ED9F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5A5EFB41C3A0CDB00ED9F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A5EFBB1C3A0EDB00ED9F46 /* ContactsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		A5A5EFA71C3A0CDB00ED9F46 /* FindTrueLove-Practice */ = {
 			isa = PBXGroup;
 			children = (
-				A5A5EFA81C3A0CDB00ED9F46 /* AppDelegate.swift */,
-				A5A5EFAA1C3A0CDB00ED9F46 /* ViewController.swift */,
 				A5A5EFAC1C3A0CDB00ED9F46 /* Main.storyboard */,
+				A5A5EFAA1C3A0CDB00ED9F46 /* ViewController.swift */,
+				A5A5EFBB1C3A0EDB00ED9F46 /* ContactsHelper.swift */,
+				A5A5EFBA1C3A0CE500ED9F46 /* Supporting Files */,
+			);
+			path = "FindTrueLove-Practice";
+			sourceTree = "<group>";
+		};
+		A5A5EFBA1C3A0CE500ED9F46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5A5EFA81C3A0CDB00ED9F46 /* AppDelegate.swift */,
 				A5A5EFAF1C3A0CDB00ED9F46 /* Assets.xcassets */,
 				A5A5EFB11C3A0CDB00ED9F46 /* LaunchScreen.storyboard */,
 				A5A5EFB41C3A0CDB00ED9F46 /* Info.plist */,
 			);
-			path = "FindTrueLove-Practice";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A5EFBC1C3A0EDB00ED9F46 /* ContactsHelper.swift in Sources */,
 				A5A5EFAB1C3A0CDB00ED9F46 /* ViewController.swift in Sources */,
 				A5A5EFA91C3A0CDB00ED9F46 /* AppDelegate.swift in Sources */,
 			);
