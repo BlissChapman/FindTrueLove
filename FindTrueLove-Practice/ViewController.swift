@@ -49,6 +49,8 @@ class ViewController: UIViewController {
                             self.valentinesNameLabel.text = "\(valentineInfo.name)"
                         }
                     })
+                } else {
+                    self.promptLabel.text = "We require access to your contacts in order to function.  Please adjust your privacy settings."
                 }
             }
         }
